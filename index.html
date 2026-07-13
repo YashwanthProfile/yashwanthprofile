@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yashwanth | Research Portfolio</title>
+    
+    <!-- Tailwind CSS dynamic engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
+              serif: ['Source Serif 4', 'Charter', 'Georgia', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Theme Custom Variable Styles and Layout Definitions -->
+    <link rel="stylesheet" href="./index.css" />
+
+    <!-- Math, Syntax Highlighting, and Markdown styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/highlight.js@11.11.1/styles/github.min.css"
+    />
+    
+    <!-- Browser-native content renderers -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.11.1/lib/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Browser-native dynamic ES module application -->
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
