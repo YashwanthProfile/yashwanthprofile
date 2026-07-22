@@ -15,11 +15,20 @@
       "location": "Room number 617, Academic C-block, Indian Institute of Technology Hyderabad, Telangana, India",
       "bio": "I am a research scholar at the Dynamical Systems and Control Laboratory (DysCo) at IIT Hyderabad since July 2024, working with Dr. Vishnu R. Unni's group. My PhD research focuses on data-driven control of aerial robots, experimental validation, and theoretical extensions. In addition, I work on complex systems approaches to analyzing transition behaviors in unsteady aero-mechanics.",
       "links": [
-        { "label": "CV", "href": "https://yashwanthprofile.github.io/cv-data/Yashwanth_Resume_2026.pdf" },
+        {
+          "label": "CV",
+          "href": "https://yashwanthprofile.github.io/cv-data/Yashwanth_Resume_2026.pdf"
+        },
         { "label": "Email", "href": "mailto:yashwanth.contact@gmail.com" },
-        { "label": "Google Scholar", "href": "https://scholar.google.com/citations?user=YtHC5_kAAAAJ&hl=en" },
+        {
+          "label": "Google Scholar",
+          "href": "https://scholar.google.com/citations?user=YtHC5_kAAAAJ&hl=en"
+        },
         { "label": "GitHub", "href": "https://github.com/yashwanthprofile" },
-        { "label": "LinkedIn", "href": "https://www.linkedin.com/in/yashwanth-m-profile/" }
+        {
+          "label": "LinkedIn",
+          "href": "https://www.linkedin.com/in/yashwanth-m-profile/"
+        }
       ]
     }
   },
@@ -136,9 +145,17 @@
         "tileIsVideo": true,
         "actions": [
           { "title": "View Details", "href": "#project/flapping-wing-mav" },
-          { "title": "AIAA Paper", "href": "https://arc.aiaa.org/doi/10.2514/6.2025-0102" }
+          {
+            "title": "AIAA Paper",
+            "href": "https://arc.aiaa.org/doi/10.2514/6.2025-0102"
+          }
         ],
-        "tags": ["Optimal Control", "Nonlinear Dynamics", "Robotics", "Flight Dynamics"],
+        "tags": [
+          "Optimal Control",
+          "Nonlinear Dynamics",
+          "Robotics",
+          "Flight Dynamics"
+        ],
         "detail": {
           "summary": "This project introduces a new six-bar mechanical design for bio-inspired flapping flight that achieves pitch, roll, and yaw torque through kinematic modulations, verified using Vortex Particle Methods and wind-tunnel force sensor arrays.",
           "mediaSrc": "https://assets.mixkit.co/videos/preview/mixkit-flying-camera-drone-with-glowing-lights-42281-large.mp4",
@@ -160,8 +177,14 @@
             }
           ],
           "links": [
-            { "title": "Read AIAA Article", "href": "https://arc.aiaa.org/doi/10.2514/6.2025-0102" },
-            { "title": "Github Repository", "href": "https://github.com/yashwanthprofile/flapping-mechanism" }
+            {
+              "title": "Read AIAA Article",
+              "href": "https://arc.aiaa.org/doi/10.2514/6.2025-0102"
+            },
+            {
+              "title": "Github Repository",
+              "href": "https://github.com/yashwanthprofile/flapping-mechanism"
+            }
           ],
           "relatedPublications": ["pub-1", "pub-4"]
         }
@@ -179,7 +202,13 @@
         "actions": [
           { "title": "View Details", "href": "#project/koopman-control" }
         ],
-        "tags": ["Optimal Control", "Nonlinear Dynamics", "Data-driven Learning", "Robotics", "Koopman Operator Theory"],
+        "tags": [
+          "Optimal Control",
+          "Nonlinear Dynamics",
+          "Data-driven Learning",
+          "Robotics",
+          "Koopman Operator Theory"
+        ],
         "detail": {
           "summary": "We apply the infinite-dimensional Koopman operator theory to linearize complex, nonlinear aero-robotic systems into finite-dimensional linear state spaces. This allows robust and ultra-fast linear controller implementations on low-power onboard microcontrollers.",
           "mediaSrc": "https://assets.mixkit.co/videos/preview/mixkit-circuit-board-of-a-computer-42283-large.mp4",
@@ -197,7 +226,10 @@
             }
           ],
           "links": [
-            { "title": "Interactive Koopman Demo", "href": "https://github.com/yashwanthprofile/koopman-mpc-demo" }
+            {
+              "title": "Interactive Koopman Demo",
+              "href": "https://github.com/yashwanthprofile/koopman-mpc-demo"
+            }
           ],
           "relatedPublications": ["pub-2"]
         }
@@ -241,8 +273,14 @@
         "authors": "Neeraj Balachandar, Yashwanth M, Vishnu Rajasekharan Unni",
         "meta": "AIAA SciTech Forum, 2025. Orlando, FL.",
         "actions": [
-          { "title": "Paper (AIAA)", "href": "https://arc.aiaa.org/doi/10.2514/6.2025-0102" },
-          { "title": "Code", "href": "https://github.com/yashwanthprofile/flapping-mechanism" }
+          {
+            "title": "Paper (AIAA)",
+            "href": "https://arc.aiaa.org/doi/10.2514/6.2025-0102"
+          },
+          {
+            "title": "Code",
+            "href": "https://github.com/yashwanthprofile/flapping-mechanism"
+          }
         ]
       },
       {
@@ -252,7 +290,10 @@
         "authors": "Yashwanth M, Vishnu Rajasekharan Unni",
         "meta": "Journal of Guidance, Control, and Dynamics (Under Review), 2025.",
         "actions": [
-          { "title": "Preprint", "href": "https://arxiv.org/abs/example-koopman-control" }
+          {
+            "title": "Preprint",
+            "href": "https://arxiv.org/abs/example-koopman-control"
+          }
         ]
       },
       {
@@ -262,7 +303,10 @@
         "authors": "Yashwanth M, Neeraj Balachandar, Vishnu Rajasekharan Unni",
         "meta": "Nonlinear Dynamics, Vol. 112, pp. 4310-4328, 2024.",
         "actions": [
-          { "title": "DOI Link", "href": "https://link.springer.com/article/10.1007/example" }
+          {
+            "title": "DOI Link",
+            "href": "https://link.springer.com/article/10.1007/example"
+          }
         ]
       },
       {
@@ -319,7 +363,10 @@
         "isPdf": true,
         "pdfUrl": "https://yashwanthprofile.github.io/blog-data/Yashwanth_Colloquium-8_Motivation_to_SVD.pdf",
         "actions": [
-          { "title": "Download PDF (SVD)", "href": "https://yashwanthprofile.github.io/blog-data/Yashwanth_Colloquium-8_Motivation_to_SVD.pdf" }
+          {
+            "title": "Download PDF (SVD)",
+            "href": "https://yashwanthprofile.github.io/blog-data/Yashwanth_Colloquium-8_Motivation_to_SVD.pdf"
+          }
         ]
       },
       {
@@ -332,7 +379,10 @@
         "isPdf": true,
         "pdfUrl": "https://yashwanthprofile.github.io/blog-data/Yashwanth_state_estimation_notes.pdf",
         "actions": [
-          { "title": "Download PDF (State Estimation)", "href": "https://yashwanthprofile.github.io/blog-data/Yashwanth_state_estimation_notes.pdf" }
+          {
+            "title": "Download PDF (State Estimation)",
+            "href": "https://yashwanthprofile.github.io/blog-data/Yashwanth_state_estimation_notes.pdf"
+          }
         ]
       }
     ]

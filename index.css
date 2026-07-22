@@ -1,5 +1,32 @@
+/* 
+ * =================================================================================
+ * ACADEMIC PORTFOLIO STYLESHEET - SYSTEM DESIGN, THEMING & OPTIMIZATION MANUAL
+ * =================================================================================
+ * 
+ * 1. DESIGN & LAYOUT PHILOSOPHY:
+ *    - Swiss/Modernist Minimal: Uses a lightweight, high-contrast palette combined
+ *      with sharp card geometry (radius: 0) to evoke a premium publication aesthetic.
+ *    - Dual-Font Synergy: 
+ *      a) --font-sans (Inter): Used for interface items, metadata, headers, and 
+ *         interactive tiles to keep them ultra-legible and compact.
+ *      b) --font-serif (Source Serif 4): Retained strictly for scholarly reading content
+ *         and detailed article bodies to evoke an editorial, deep-focus tone.
+ *      c) --font-signature (Great Vibes): Used for a personalized signature branding.
+ * 
+ * 2. VERTICALLY COMPACT TILE METRICS:
+ *    - Padding reduced to 8px, content gaps condensed to 6px, and header margins to 2px.
+ *    - Image aspects are maintained at 4:3, forcing descriptions and actions to sit closer together,
+ *      minimizing negative vertical scrolling overhead and maximizing high information density.
+ * 
+ * 3. THEMING TOKENS:
+ *    - :root represents the high-contrast light theme.
+ *    - [data-theme="dark"] / .dark defines the high-readability midnight mode.
+ *    - Select colors map exactly to CSS custom properties to ensure 100% style stability.
+ * =================================================================================
+ */
+
 /* Custom theme styling for Yashwanth's Portfolio */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Great+Vibes&family=Alex+Brush&display=swap");
 
 /* Theme variables */
 :root {
@@ -7,6 +34,7 @@
     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif;
   --font-serif: "Source Serif 4", Charter, Georgia, serif;
+  --font-signature: "Great Vibes", "Alex Brush", cursive;
   --bg: #fafafa;
   --panel: transparent;
   --panel-strong: transparent;
@@ -299,11 +327,22 @@ a {
   background: transparent;
   color: var(--ink);
   text-decoration: none;
-  font-family: var(--font-serif);
-  font-weight: 700;
-  font-size: clamp(1.05rem, 1.4vw, 1.34rem);
-  letter-spacing: 0;
+  font-family: var(--font-signature);
+  font-weight: 400;
+  font-size: clamp(1.45rem, 2.2vw, 2.1rem);
+  letter-spacing: 0.03em;
   white-space: nowrap;
+}
+
+/* Fix theme color select readability in dark mode */
+.color-combo-select {
+  background-color: var(--bg) !important;
+  color: var(--ink) !important;
+}
+
+.color-combo-select option {
+  background-color: var(--bg) !important;
+  color: var(--ink) !important;
 }
 
 .topnav {
@@ -1021,8 +1060,8 @@ body[data-theme="dark"] .avatar-image {
   display: flex !important;
   flex-direction: column !important;
   align-items: stretch;
-  gap: 10px !important;
-  padding: 10px !important;
+  gap: 6px !important;
+  padding: 8px !important;
   border-radius: 0px !important; /* Elegant sharp corners */
   text-decoration: none;
   background: var(--panel) !important;
@@ -1049,7 +1088,7 @@ body[data-theme="dark"] .avatar-image {
 }
 
 .project-tile-media-link {
-  width: calc(100% + 20px) !important;
+  width: calc(100% + 16px) !important;
   flex: none !important;
   height: auto !important;
   aspect-ratio: 4 / 3 !important;
@@ -1057,7 +1096,7 @@ body[data-theme="dark"] .avatar-image {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin: -10px -10px 0 -10px;
+  margin: -8px -8px 0 -8px;
   border-bottom: 1px solid var(--line);
   background: color-mix(in srgb, var(--line) 4%, var(--bg));
 }
@@ -1083,20 +1122,21 @@ body[data-theme="dark"] .avatar-image {
 }
 
 .project-tile-head {
-  padding: 4px 0 0 0;
+  padding: 2px 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 4px;
+  gap: 2px;
   flex: 1;
 }
 
 .project-tile-head h3 {
-  font-size: 0.72rem !important; /* Extremely small, neat, and highly balanced heading */
+  font-family: var(--font-sans);
+  font-size: 0.95rem !important; /* Elegant modern display title size, extremely clean */
   line-height: 1.25;
-  margin: 0;
+  margin: 0 0 2px 0;
   letter-spacing: -0.015em;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--ink);
 }
 
@@ -1268,6 +1308,16 @@ body[data-theme="dark"] .avatar-image {
   gap: 10px;
 }
 
+.note-article-header h1 {
+  font-family: var(--font-sans);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800; /* Extra strong, ultra-modern bold look resembling Nexus of Thought */
+  letter-spacing: -0.035em; /* Snug tracking for beautiful modern display titles */
+  line-height: 1.15;
+  color: var(--ink);
+  margin: 0;
+}
+
 .note-article-body {
   display: grid;
   gap: 22px;
@@ -1301,14 +1351,18 @@ body[data-theme="dark"] .avatar-image {
 }
 
 .note-article-body h1 {
+  font-family: var(--font-sans);
   font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
 }
 
 .note-article-body h2 {
   margin-top: 14px;
   font-size: 1.45rem;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-weight: 700;
+  letter-spacing: -0.02em;
   border-bottom: 1px solid var(--line);
   padding-bottom: 6px;
 }
@@ -1563,7 +1617,7 @@ body[data-theme="dark"] .avatar-image {
 
   .brandmark {
     min-height: 38px;
-    font-size: 0.98rem;
+    font-size: 1.4rem;
   }
 
   .menu-toggle {
@@ -1779,8 +1833,10 @@ body[data-theme="dark"] .avatar-image {
 
   .project-tile-head h3,
   .project-tile h3 {
-    font-size: 0.78rem !important;
+    font-family: var(--font-sans);
+    font-size: 0.9rem !important;
     line-height: 1.25;
+    letter-spacing: -0.015em;
   }
 
   .card h3,
